@@ -11,7 +11,7 @@ html {
 body {
     font-size: x-large;
     font-family: Arial, sans-serif;
-    color: #FFF;
+    color: #ff5361;
     background-color: #FFF;
     min-height: 100%;
     display: flex;
@@ -54,7 +54,7 @@ nav button {
 
 nav a:hover,
 nav button:hover {
-    background-color: white;
+    background-color: #ff5361;
     color: #3399FF;
 }
 
@@ -68,7 +68,7 @@ section {
 }
 
 section h2 {
-    color: white;
+    color: #ff5361;
     margin-bottom: 10px;
 }
 
