@@ -11,15 +11,15 @@ html {
 body {
     font-size: x-large;
     font-family: Arial, sans-serif;
-    color: white;
-    background-color: #3399FF;
+    color: #3399FF;
+    background-color: #FFF;
     min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: #FEE12B;
+    background-color: #3399FF;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ section h2 {
 
 footer{
     margin-top: 100%;
-    background-color: #FEE12B;
+    background-color: #3399FF;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
