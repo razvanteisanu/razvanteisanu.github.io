@@ -18,6 +18,30 @@
 </head>
 <body>
     <body onload="navigate()"></body>
+    <div class="background-image"></div>
+    <style>
+    .background-image {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .background-image {
+        content: '';
+        background-image: url('./background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        opacity: 0.15;
+        pointer-events: none;
+        background-blend-mode: normal;
+    }
+    </style>
     <header>
         <h1>Petrolul Lipanesti</h1>
     </header>
@@ -56,11 +80,6 @@
             </div>
         </section>
     </main>
-    <style type="text/css">
-        body{
-            background-image: url('background.jpg');
-        }
-    </style>
     <style>
         footer {
             position: fixed;

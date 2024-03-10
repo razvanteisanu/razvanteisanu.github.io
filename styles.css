@@ -11,15 +11,15 @@ html {
 body {
     font-size: x-large;
     font-family: Arial, sans-serif;
-    color: #ff5361;
-    background-color: #FFF;
+    color: white;
+    background-color: #3399FF;
     min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: #3399FF;
+    background-color: #FEE12B;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -54,7 +54,7 @@ nav button {
 
 nav a:hover,
 nav button:hover {
-    background-color: #ff5361;
+    background-color: white;
     color: #3399FF;
 }
 
@@ -68,13 +68,13 @@ section {
 }
 
 section h2 {
-    color: #ff5361;
+    color: white;
     margin-bottom: 10px;
 }
 
 footer{
     margin-top: 100%;
-    background-color: #3399FF;
+    background-color: #FEE12B;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -106,14 +106,13 @@ footer{
 }
 
 form {
-    background: #ff5361;
+    background: white;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
-
 }
 
 form h3 {
@@ -135,10 +134,10 @@ form input, form textarea {
 
 }
 
-form button {
+form button{
     padding: 15px;
     background: #ff5361;
-    color: #fff;
+    color: #3399FF;
     font-size: 18px;
     border: 0;
     outline: none;
@@ -148,6 +147,7 @@ form button {
     border-radius: 30px;
 }
 
+
 form button:hover {
-    color: #3399FF;
+    color: #FFF;
 }
