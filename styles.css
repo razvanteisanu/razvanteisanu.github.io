@@ -106,7 +106,7 @@ footer{
 }
 
 form {
-    background: white;
+    background: #ff5361;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
