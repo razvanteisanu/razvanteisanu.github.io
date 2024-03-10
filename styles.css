@@ -147,3 +147,7 @@ form button {
     margin: 20px auto 0;
     border-radius: 30px;
 }
+
+form button:hover{
+    color: white;
+}
