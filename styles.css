@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: x-large;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #3399FF;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #FEE12B;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav a,
+nav button {
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-content: center;
+}
+
+nav a:hover,
+nav button:hover {
+    background-color: white;
+    color: #3399FF;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    
+}
+
+section h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer{
+    margin-top: 100%;
+    background-color: #FEE12B;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#Icons{
+    font-size: x-large;
+    text-decoration: none;
+    background-size: auto;
+    background-color: white;
+    color: #3399FF;
+    padding: 5px 6px 4.5px 6px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: #3399FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+
+}
+
+form h3 {
+    color: #3399FF;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: flex;
+    align-self: center;
+
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+
+}
+
+form button {
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}

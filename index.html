@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lipanesti</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script>
+        function navigate(sectionId = "Acasa") {
+            const sections = document.getElementsByTagName('section');
+            for (let i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/90c249ef54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <body onload="navigate()"></body>
+    <header>
+        <h1>Petrolul Lipanesti</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navigate('Acasa')">Acasa</a></li>
+            <li><a href="#" onclick="navigate('Cariera')">Cariera</a></li>
+            <li><a href="#" onclick="navigate('Program')">Program</a></li>
+            <li><a href="#" onclick="navigate('Contact')">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Acasa">
+            <h2>Acasa</h2>
+            <p>Content for the Acasa section...</p>
+        </section>
+        <section id="Cariera">
+            <h2>Cariera</h2>
+            <p>Content for the about section...</p>
+        </section>
+        <section id="Program">
+            <h2>Program</h2>
+            <p>Content for the planning section...</p>
+        </section>
+        <section id="Contact">
+            <h2>Contact</h2>
+            <div class="container">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h3>Ajutor</h3>
+                    <input type="text" id="name" placeholder="Nume" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="phone" placeholder="Phone no." required>
+                    <textarea id="message" rows="4" placeholder="Cum va putem ajuta?"></textarea>
+                    <button type="submit">Trimite</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+        }
+    </style>
+     
+    <footer>
+     <a href="https://www.youtube.com/watch?v=ApkgdvaXv20&ab_channel=MusicNation" target="_blank" style="color: #3399FF" id="Icons"><i class="fa-brands fa-facebook"></i></a>
+     <a href="https://www.youtube.com/watch?v=ApkgdvaXv20&ab_channel=MusicNation" target="_blank" style="color: #3399FF" id="Icons"><i class="fa-brands fa-instagram"></i></a>
+     <a href="https://www.youtube.com/watch?v=ApkgdvaXv20&ab_channel=MusicNation" target="_blank" style="color: #3399FF" id="Icons"><i class="fa-brands fa-linkedin"></i></a>
+     <a href="https://www.youtube.com/watch?v=ApkgdvaXv20&ab_channel=MusicNation" target="_blank" style="color: #3399FF" id="Icons"><i class="fa-brands fa-whatsapp"></i></a>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+                    Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "razvanteisanu@yahoo.com",
+            Password : "6AC8E14D042DBBC468AC193DC08E5E8777FD",
+            To : 'razvanteisanu@yahoo.com',
+            From : document.getElementById("email").value,
+            Subject : " ",
+            Body : "Name: " + document.getElementById("name").value
+                        + "<br> Email: " + documnet.getElementById("email").value
+                        + "<br> Telefon: " + documnet.getElementById("phone").value
+                        + "<br> Mesaj: " + documnet.getElementById("message").value
+        }).then(
+        message => alert("Mesajul a fost trimis cu succes!")
+        );
+        }
+    </script>
+</body>
+</html>

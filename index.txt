@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function navigate(sectionId) {
+            const sections = document.getElementsByTagName('section');
+            for (let i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Petrolul Lipanesti</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navigate('home')">Home</a></li>
+            <li><a href="#" onclick="navigate('about')">About</a></li>
+            <li><a href="#" onclick="navigate('planning')">Planning</a></li>
+            <li><a href="#" onclick="navigate('contact')">Contact</a></li>
+            <li><button class="python-button">Python</button></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Content for the home section...</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Content for the about section...</p>
+        </section>
+        <section id="planning">
+            <h2>Planning</h2>
+            <p>Content for the planning section...</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Content for the contact section...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Simple Website</p>
+    </footer>
+</body>
+</html>
