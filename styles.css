@@ -18,8 +18,7 @@ body {
     flex-direction: column;
 }
 
-header {
-    background-color: #FEE12B;
+header { 
     height: 100px;
     display: flex;
     justify-content: center;
@@ -136,7 +135,7 @@ form input, form textarea {
 
 form button{
     padding: 15px;
-    background: #FFF;
+    background: #ff5361;
     color: #3399FF;
     font-size: 18px;
     border: 0;
